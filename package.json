@@ -1,0 +1,165 @@
+{
+  "name": "@inkarnaterpg/icons",
+  "version": "1.0.0",
+  "description": "Bundled Iconify icon sets for InkarnateRPG",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./ant-design": {
+      "types": "./dist/ant-design.d.mts",
+      "import": "./dist/ant-design.mjs"
+    },
+    "./bytesize": {
+      "types": "./dist/bytesize.d.mts",
+      "import": "./dist/bytesize.mjs"
+    },
+    "./carbon": {
+      "types": "./dist/carbon.d.mts",
+      "import": "./dist/carbon.mjs"
+    },
+    "./cil": {
+      "types": "./dist/cil.d.mts",
+      "import": "./dist/cil.mjs"
+    },
+    "./dashicons": {
+      "types": "./dist/dashicons.d.mts",
+      "import": "./dist/dashicons.mjs"
+    },
+    "./fa": {
+      "types": "./dist/fa.d.mts",
+      "import": "./dist/fa.mjs"
+    },
+    "./gridicons": {
+      "types": "./dist/gridicons.d.mts",
+      "import": "./dist/gridicons.mjs"
+    },
+    "./ic": {
+      "types": "./dist/ic.d.mts",
+      "import": "./dist/ic.mjs"
+    },
+    "./ion": {
+      "types": "./dist/ion.d.mts",
+      "import": "./dist/ion.mjs"
+    },
+    "./maki": {
+      "types": "./dist/maki.d.mts",
+      "import": "./dist/maki.mjs"
+    },
+    "./mdi": {
+      "types": "./dist/mdi.d.mts",
+      "import": "./dist/mdi.mjs"
+    },
+    "./oi": {
+      "types": "./dist/oi.d.mts",
+      "import": "./dist/oi.mjs"
+    },
+    "./raphael": {
+      "types": "./dist/raphael.d.mts",
+      "import": "./dist/raphael.mjs"
+    },
+    "./vaadin": {
+      "types": "./dist/vaadin.d.mts",
+      "import": "./dist/vaadin.mjs"
+    },
+    "./whh": {
+      "types": "./dist/whh.d.mts",
+      "import": "./dist/whh.mjs"
+    },
+    "./ant-design/*": {
+      "types": "./dist/ant-design/*.d.mts",
+      "import": "./dist/ant-design/*.mjs"
+    },
+    "./bytesize/*": {
+      "types": "./dist/bytesize/*.d.mts",
+      "import": "./dist/bytesize/*.mjs"
+    },
+    "./carbon/*": {
+      "types": "./dist/carbon/*.d.mts",
+      "import": "./dist/carbon/*.mjs"
+    },
+    "./cil/*": {
+      "types": "./dist/cil/*.d.mts",
+      "import": "./dist/cil/*.mjs"
+    },
+    "./dashicons/*": {
+      "types": "./dist/dashicons/*.d.mts",
+      "import": "./dist/dashicons/*.mjs"
+    },
+    "./fa/*": {
+      "types": "./dist/fa/*.d.mts",
+      "import": "./dist/fa/*.mjs"
+    },
+    "./gridicons/*": {
+      "types": "./dist/gridicons/*.d.mts",
+      "import": "./dist/gridicons/*.mjs"
+    },
+    "./ic/*": {
+      "types": "./dist/ic/*.d.mts",
+      "import": "./dist/ic/*.mjs"
+    },
+    "./ion/*": {
+      "types": "./dist/ion/*.d.mts",
+      "import": "./dist/ion/*.mjs"
+    },
+    "./maki/*": {
+      "types": "./dist/maki/*.d.mts",
+      "import": "./dist/maki/*.mjs"
+    },
+    "./mdi/*": {
+      "types": "./dist/mdi/*.d.mts",
+      "import": "./dist/mdi/*.mjs"
+    },
+    "./oi/*": {
+      "types": "./dist/oi/*.d.mts",
+      "import": "./dist/oi/*.mjs"
+    },
+    "./raphael/*": {
+      "types": "./dist/raphael/*.d.mts",
+      "import": "./dist/raphael/*.mjs"
+    },
+    "./vaadin/*": {
+      "types": "./dist/vaadin/*.d.mts",
+      "import": "./dist/vaadin/*.mjs"
+    },
+    "./whh/*": {
+      "types": "./dist/whh/*.d.mts",
+      "import": "./dist/whh/*.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && rollup -c rollup.config.mjs && node scripts/generate-index.mjs"
+  },
+  "dependencies": {
+    "@iconify/icons-ant-design": "*",
+    "@iconify/icons-bytesize": "*",
+    "@iconify/icons-carbon": "*",
+    "@iconify/icons-cil": "*",
+    "@iconify/icons-dashicons": "*",
+    "@iconify/icons-fa": "*",
+    "@iconify/icons-gridicons": "*",
+    "@iconify/icons-ic": "*",
+    "@iconify/icons-ion": "*",
+    "@iconify/icons-maki": "*",
+    "@iconify/icons-mdi": "*",
+    "@iconify/icons-oi": "*",
+    "@iconify/icons-raphael": "*",
+    "@iconify/icons-vaadin": "*",
+    "@iconify/icons-whh": "*",
+    "@iconify/types": "*"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "rimraf": "^6.0.0",
+    "rollup": "^4.0.0"
+  }
+}
