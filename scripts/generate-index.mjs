@@ -44,13 +44,16 @@ for (const file of srcFiles) {
       join(iconDir, `${name}.mjs`),
       `export { ${name} as default } from "../${pkgName}.mjs";\n`
     );
-    writeFileSync(
-      join(iconDir, `${name}.d.mts`),
-      `import type { IconifyIcon } from "@iconify/types";\ndeclare const icon: IconifyIcon;\nexport default icon;\n`
-    );
   }
   console.log(`Generated dist/${pkgName}/ (${names.length} individual icons)`);
 }
+
+// Generate shared dist/icon.d.mts for individual icon imports
+writeFileSync(
+  join(distDir, "icon.d.mts"),
+  `import type { IconifyIcon } from "@iconify/types";\ndeclare const icon: IconifyIcon;\nexport default icon;\n`
+);
+console.log("Generated dist/icon.d.mts (shared type for individual imports)");
 
 // Generate dist/index.d.mts
 const dtsIndexLines = distFiles.map((f) => {
