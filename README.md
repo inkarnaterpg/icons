@@ -1,5 +1,7 @@
 # @inkarnaterpg/icons
 
+[![NPM version](https://img.shields.io/npm/v/@inkarnaterpg/icons.svg)](https://www.npmjs.org/package/@inkarnaterpg/icons)
+
 Pre-built [Iconify](https://iconify.design/) icon sets as ESM with TypeScript declarations.
 
 This library is a workaround for how Rolldown was not correctly converting the original iconify packages from CJS to ESM.
