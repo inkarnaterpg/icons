@@ -1,6 +1,6 @@
 {
   "name": "@inkarnaterpg/icons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bundled Iconify icon sets for InkarnateRPG",
   "type": "module",
   "main": "./dist/index.mjs",
@@ -136,7 +136,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rimraf dist && rollup -c rollup.config.mjs && node scripts/generate-index.mjs"
+    "build": "rimraf dist && node scripts/build.mjs"
   },
   "dependencies": {
     "@iconify/icons-ant-design": "*",
@@ -157,9 +157,6 @@
     "@iconify/types": "*"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^29.0.0",
-    "@rollup/plugin-node-resolve": "^16.0.0",
-    "rimraf": "^6.0.0",
-    "rollup": "^4.0.0"
+    "rimraf": "^6.0.0"
   }
 }

@@ -30,9 +30,6 @@ jobs:
         run: |
           pnpm install --production=false --frozen-lockfile
 
-      - name: Generate source entries
-        run: node scripts/generate-entries.mjs
-
       - name: Run build
         run: pnpm run build
 
